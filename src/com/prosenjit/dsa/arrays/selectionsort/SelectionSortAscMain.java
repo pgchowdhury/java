@@ -43,7 +43,7 @@ class SelectionSortAsc {
 
 public class SelectionSortAscMain {
     public static void main(String[] args) {
-        int[] arri = {20, 35, -15, 7, 55, 1, -22};
+        int[] arri = {20, 35, -15, 7, 55, 1, -22, 78};
         SelectionSortAsc ssa = new SelectionSortAsc(arri);
 
         ssa.selectionSort();

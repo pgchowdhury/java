@@ -45,7 +45,7 @@ class SelectionSortAscGeneric <T extends Number & Comparable<? super T>> {
 public class SelectionSortAscGenericMain {
     public static void main(String[] args) {
 
-        System.out.println("*********** Integer Array ************");
+        System.out.println("*********** Integer Array *************");
         Integer[] arri = {20, 35, -15, 7, 55, 1, -22};
         SelectionSortAscGeneric<Integer> ssai = new SelectionSortAscGeneric<>(arri);
         ssai.selectionSort();
