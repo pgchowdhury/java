@@ -34,14 +34,15 @@ class BubbleSortAsc  {
                  And method returns the ascending sorted array.
 
          */
-        int unSortedArray = arra.length;
-
-        for (int i=0; i < unSortedArray; unSortedArray--){
-            for (int j=0; j < unSortedArray; j++){
-                if ((j < unSortedArray-1) && (arra[j] > arra[j+1])) {
+        int unSortedArray = arra.length - 1;
+        int i = 0;
+        while (i < unSortedArray){
+            for (int j=0; j <= unSortedArray; j++){
+                if ((j < unSortedArray) && (arra[j] > arra[j+1])) {
                     swap (arra, j , j+1);
                 }
             }
+            unSortedArray--;
         }
 
         return arra;
@@ -60,8 +61,6 @@ public class BubbleSortMainAsc {
         for (int a : sortedArray) {
             System.out.println(a);
         }
-
-
     }
 
 }
