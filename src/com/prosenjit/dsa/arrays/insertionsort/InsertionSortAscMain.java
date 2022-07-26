@@ -18,6 +18,7 @@ class InsertionSortAsc {
         int lastUnsortedIndex = arra.length - 1;
         //Start loop for unsorted array starting from 1
         while (unsortedIndex <=  lastUnsortedIndex) {
+            System.out.println("Insertion Sort Outer loop");
             int newElement = arra[unsortedIndex]; // new element is the element in unsorted index
             /*
             if newElement < of the previous sorted array elements, then insert the new element before that.
@@ -26,6 +27,7 @@ class InsertionSortAsc {
             */
             int i;
             for (i=unsortedIndex; i > 0 && arra[i-1] > newElement; i--) { //loop for sorted array,
+                System.out.println("Insertion Sort Inner loop");
                 arra[i] = arra[i-1];
             }
             arra[i] = newElement; // Inserting the newElement to the correct position.
